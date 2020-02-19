@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\かず\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\かず\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Vortex.-2114688518.00" t="ExcludeRecursive" />
+    <e p="D:\MakeGame\Vortex" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Script" t="Include">
+          <e p="Bullet.cs" t="Include" />
+          <e p="Goal.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="Vortex.cs" t="Include" />
+          <e p="VortexManager.cs" t="Include" />
+          <e p="Wall.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Vortex.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,15 +15,16 @@ public class Player : MonoBehaviour
     [SerializeField] private int vortexActiveLimit = 3;
     [SerializeField] private int poolLimit = 5;
     private int _vortexEndNum = 0, _vortexActiveNum = 0;
-    
-    
-    
-    
+
+
+
+    private Rigidbody _rb;
     private Camera _camera;
     
     // Start is called before the first frame update
     void Awake()
     {
+        _rb = GetComponent<Rigidbody>();
         _camera = Camera.main;
         _vortexPool = new Vortex[poolLimit];
 
@@ -54,7 +56,7 @@ public class Player : MonoBehaviour
 
     private void PlayerMove()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             var ray = _camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out var hit, 30f))
@@ -67,7 +69,7 @@ public class Player : MonoBehaviour
                 bullet.Shot((pos - transform.position).normalized, bulletSpeed);
             }
             
-        }else if (Input.GetMouseButtonDown(1))
+        }else if (Input.GetMouseButtonDown(0))
         {
             var ray = _camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out var hit, 30f))
@@ -83,7 +85,11 @@ public class Player : MonoBehaviour
 
     private void MainCharaMove()
     {
-        
+        var axis = Vector3.Cross(Vector3.up, _rb.velocity.normalized);
+
+        var angle = Vector3.Angle(Vector3.up, _rb.velocity.normalized) * (axis.z < 0 ? -1 : 1);
+
+        transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
 
@@ -155,5 +161,27 @@ public class Player : MonoBehaviour
         bul.Initialize();
         _bulletPool.Add(bul);
         return bul;
+    }
+
+    public float Angle(Vector3 origin, Vector3 target)
+    {
+        var diff = origin - target;
+
+        var axis = Vector3.Cross(Vector3.up, diff);
+
+        var angle = Vector3.Angle(Vector3.up, diff) * (axis.z < 0 ? -1 : 1);
+
+        return angle;
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        var enemy = other.GetComponent<IEnemy>();
+
+        if (enemy != null)
+        {
+            enemy.BeShot();
+        }
     }
 }

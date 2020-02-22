@@ -56,6 +56,8 @@
      <Compile Include="Assets\Script\Bullet.cs" />
      <Compile Include="Assets\Script\Button.cs" />
      <Compile Include="Assets\Script\CameraContorol.cs" />
+     <Compile Include="Assets\Script\Enemy.cs" />
+     <Compile Include="Assets\Script\EnemySpone.cs" />
      <Compile Include="Assets\Script\Goal.cs" />
      <Compile Include="Assets\Script\Player.cs" />
      <Compile Include="Assets\Script\Vortex.cs" />

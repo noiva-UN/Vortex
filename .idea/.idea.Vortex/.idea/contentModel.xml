@@ -10,6 +10,8 @@
           <e p="Bullet.cs" t="Include" />
           <e p="Button.cs" t="Include" />
           <e p="CameraContorol.cs" t="Include" />
+          <e p="Enemy.cs" t="Include" />
+          <e p="EnemySpone.cs" t="Include" />
           <e p="Goal.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="Vortex.cs" t="Include" />

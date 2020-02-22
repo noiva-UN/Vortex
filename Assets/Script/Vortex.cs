@@ -14,13 +14,17 @@ public class Vortex : MonoBehaviour
     private float mathTime = 0f, gravity = 1f;
 
     private Vector3 targetPos = Vector3.one, originPos = Vector3.one;
-    
+
+    private int count = 0;
+    private Animator _animator;
+    private static readonly int CountInAnimator = Animator.StringToHash("Count");
+
     // Update is called once per frame
     void Update()
     {
         if (effectActive)
         {
-            playerRb.AddForce(GetDirection() * Time.deltaTime, ForceMode.Acceleration);
+            playerRb.AddForce(GetDirection() * Time.deltaTime * (count / 2), ForceMode.Acceleration);
         }
         else
         {
@@ -34,35 +38,70 @@ public class Vortex : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// プレイヤーから見た渦の方向の単位ベクトルを得る
+    /// </summary>
+    /// <returns>単位ベクトル</returns>
     private Vector3 GetDirection()
     {
         var vec = transform.position - player.gameObject.transform.position;
         return vec.normalized * gravity;
     }
 
-    private void Initialize()
+    /// <summary>
+    /// 初期設定、生成後に一回だけ呼ぶやつ
+    /// </summary>
+    public void SetUp(GameObject playerObject)
     {
+        player = playerObject;
         playerRb = player.GetComponent<Rigidbody>();
         rb = GetComponent<Rigidbody>();
+        _animator = GetComponent<Animator>();
+        
         gameObject.SetActive(false);
     }
-    
-    public void SetPlayer(GameObject gameObject)
+
+    /// <summary>
+    /// 初期化　配置後に1回だけ呼ぶ奴
+    /// </summary>
+    private void Initialized()
     {
-        player = gameObject;
-        Initialize();
+        count = 3;
+        _animator.SetInteger(CountInAnimator,count);
     }
 
+    
+    /// <summary>
+    /// 渦の現在位置から次の位置に向けて打ち出す
+    /// </summary>
+    /// <param name="targetPosition">目標</param>
+    /// <param name="speed">スピード</param>
+    /// <param name="weight">重力</param>
     public void ShotThis(Vector3 targetPosition , float speed, float weight)
     {
+        gameObject.SetActive(true);
         targetPos = targetPosition;
         originPos = transform.position;
         gravity = weight;
         
         effectActive = false;
         rb.velocity = (targetPos - originPos).normalized * speed;
+        Initialized();
     }
 
+    /// <summary>
+    /// 他の渦が発射されたときに呼ぶやつ
+    /// </summary>
+    public void ShotOther()
+    {
+        count -= 1;
+        _animator.SetInteger(CountInAnimator, count);
+    }
+    
+    /// <summary>
+    /// 目的地に着いたかどうか
+    /// </summary>
+    /// <returns>着いた(true/false)</returns>
     private bool CheckArrival()
     {
         return (targetPos - originPos).magnitude <= (transform.position - originPos).magnitude + 0.1;

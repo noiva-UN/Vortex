@@ -5,16 +5,15 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private int Maxhp = 10;
+    [SerializeField] private int Maxhp = 10, pow =1;
     [SerializeField] private float bulletSpeed = 5f, gravityPow = 2f;
     [SerializeField] private GameObject bullet, vortex;
     
     private Vortex[] _vortexPool;
     private List<Bullet> _bulletPool = new List<Bullet>();
     
-    [SerializeField] private int vortexActiveLimit = 3;
-    [SerializeField] private int poolLimit = 5;
-    private int _vortexEndNum = 0, _vortexActiveNum = 0;
+    [SerializeField] private int poolLimit = 3;
+    private int _vortexEndNum = 0;
 
 
 
@@ -24,6 +23,18 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        Initialized();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        PlayerMove();
+        MainCharaMove();
+    }
+
+    private void Initialized()
+    {
         _rb = GetComponent<Rigidbody>();
         _camera = Camera.main;
         _vortexPool = new Vortex[poolLimit];
@@ -32,7 +43,7 @@ public class Player : MonoBehaviour
         {
             var vor = Instantiate(vortex).GetComponent<Vortex>();
             
-            vor.SetPlayer(gameObject);
+            vor.SetUp(gameObject);
             //vor.gameObject.SetActive(false);
             _vortexPool[i] = vor;
         }
@@ -46,14 +57,10 @@ public class Player : MonoBehaviour
 
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        PlayerMove();
-        MainCharaMove();
-    }
-
+    
+    /// <summary>
+    /// プレイヤーの操作面
+    /// </summary>
     private void PlayerMove()
     {
         if (Input.GetMouseButtonDown(1))
@@ -83,6 +90,9 @@ public class Player : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// キャラクターの制御面
+    /// </summary>
     private void MainCharaMove()
     {
         var axis = Vector3.Cross(Vector3.up, _rb.velocity.normalized);
@@ -93,11 +103,16 @@ public class Player : MonoBehaviour
     }
 
 
-    private bool CheckCanMake(Vector3 argPos)
+    /// <summary>
+    /// 今渦がある位置から次の位置に移動する間に障害物があるか
+    /// </summary>
+    /// <param name="nextPos">次の位置</param>
+    /// <returns></returns>
+    private bool CheckCanMake(Vector3 nextPos)
     {
-        var position = transform.position;
-        var hit = Physics.RaycastAll(position, argPos - position,
-            (argPos - position).magnitude);
+        var position = _vortexPool[_vortexEndNum].transform.position;
+        var hit = Physics.RaycastAll(position, nextPos - position,
+            (nextPos - position).magnitude);
 
         foreach (var obj in hit)
         {
@@ -111,23 +126,21 @@ public class Player : MonoBehaviour
 
     }
     
+    /// <summary>
+    /// 渦を移動させるメソッド等を呼んで、ポインタを動かす
+    /// </summary>
+    /// <param name="argPos">渦の移動先</param>
     public void MakeVortex(Vector3 argPos)
     {
-        _vortexActiveNum++;
-        if (vortexActiveLimit < _vortexActiveNum)
+        var vor=_vortexPool[_vortexEndNum];
+        vor.ShotThis(argPos, bulletSpeed, gravityPow);
+
+        for (var i = 0; i < _vortexPool.Length; i++)
         {
-            var pas = _vortexEndNum - vortexActiveLimit;
-            if (pas < 0)
-            {
-                pas = poolLimit + pas;
-            }
-            
-            _vortexPool[pas].gameObject.SetActive(false);
+            if (i != _vortexEndNum)
+                _vortexPool[i].ShotOther();
         }
 
-        _vortexPool[_vortexEndNum].transform.position = transform.position;
-        _vortexPool[_vortexEndNum].ShotThis(argPos, bulletSpeed, gravityPow);
-        _vortexPool[_vortexEndNum].gameObject.SetActive(true);
         _vortexEndNum++;
         if (poolLimit <= _vortexEndNum)
         {
@@ -135,26 +148,30 @@ public class Player : MonoBehaviour
         }
     }
 
+    
+    /// <summary>
+    /// バレットプール内で使われていないバレットを探す。無ければ新しく作る。
+    /// </summary>
+    /// <returns>使えるバレット</returns>
     public Bullet ActiveBullet()
     {
         foreach (var bullet in _bulletPool)
         {
             if (!bullet.gameObject.active)
             {
-                return ActiveInBulletPool(bullet);
-                
+                bullet.gameObject.SetActive(true);
+                return bullet;
+
             }
         }
 
         return ActiveNewBullet();
     }
-
-    public Bullet ActiveInBulletPool(Bullet bullet)
-    {
-        bullet.gameObject.SetActive(true);
-        return bullet;
-    }
-
+    
+    /// <summary>
+    /// 新しくバレットプールにバレットを作る
+    /// </summary>
+    /// <returns>新しく作ったバレット</returns>
     public Bullet ActiveNewBullet()
     {
         var bul = Instantiate(bullet).GetComponent<Bullet>();
@@ -177,11 +194,11 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        var enemy = other.GetComponent<IEnemy>();
+        var enemy = other.GetComponent<Enemy>();
 
         if (enemy != null)
         {
-            enemy.BeShot();
+            enemy.BeShot(pow);
         }
     }
 }

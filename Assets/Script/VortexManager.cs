@@ -67,7 +67,7 @@ public class VortexManager : MonoBehaviour
         }
         
         pool[endNum].transform.position = argPos;
-        pool[endNum].GetComponent<Vortex>().SetPlayer(player);
+        pool[endNum].GetComponent<Vortex>().SetUp(player);
         pool[endNum].SetActive(true);
         endNum++;
         if (poolLimit <= endNum)

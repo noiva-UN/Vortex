@@ -360,6 +360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectActive: 1
   player: {fileID: 756603231}
+  pulled: []
 --- !u!135 &489165674
 SphereCollider:
   m_ObjectHideFlags: 0

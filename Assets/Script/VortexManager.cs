@@ -15,9 +15,39 @@ public class VortexManager : MonoBehaviour
     private int endNum = 0, activeNum = 0;
     private Camera _camera;
     
+    
+    static public VortexManager Instance;
+    
 
     // Start is called before the first frame update
     private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            Initialized();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
+        
+    }
+    
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void ShotVortex()
+    {
+        
+    }
+    
+    private void Initialized()
     {
         _camera = Camera.main;
         pool = new GameObject[poolLimit];
@@ -32,26 +62,6 @@ public class VortexManager : MonoBehaviour
         }
     }
     
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 30f))
-            {
-                var pos = hit.point;
-                MakeVortex(pos);
-            }
-            
-            
-
-        }
-        
-        
-    }
-
     public void MakeVortex(Vector3 argPos)
     {
         activeNum++;

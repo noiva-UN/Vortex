@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
             var vor = Instantiate(vortex).GetComponent<Vortex>();
             
             vor.SetUp(gameObject);
+
             //vor.gameObject.SetActive(false);
             _vortexPool[i] = vor;
         }
@@ -100,6 +101,8 @@ public class Player : MonoBehaviour
         var angle = Vector3.Angle(Vector3.up, _rb.velocity.normalized) * (axis.z < 0 ? -1 : 1);
 
         transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        _rb.velocity -= _rb.velocity * 0.001f;
     }
 
 
@@ -134,7 +137,8 @@ public class Player : MonoBehaviour
     {
         var vor=_vortexPool[_vortexEndNum];
         vor.ShotThis(argPos, bulletSpeed, gravityPow);
-
+        vor.AddPulledObject(_rb);
+        
         for (var i = 0; i < _vortexPool.Length; i++)
         {
             if (i != _vortexEndNum)

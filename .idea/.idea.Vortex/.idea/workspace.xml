@@ -2,34 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3801fe68-82f7-40f5-931f-01b8568600cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Vortex.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Vortex.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Vortex.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Vortex.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/dead.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/dead.anim.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Vortex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Vortex.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/VortexManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/VortexManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/be6da7-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/be6da7-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/6c6606-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/6c6606-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/05/05d54540dbfa00940b648e73fb7585cd" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/05/05d54540dbfa00940b648e73fb7585cd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/1f/1f41168dc0ee1884f93c43a292016025" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1f/1f41168dc0ee1884f93c43a292016025" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/79/79c50d19c7683b14e9cc6c133d7c378f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/79/79c50d19c7683b14e9cc6c133d7c378f.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/9c/9cf0efb53d2cd654ebb09a11510ba775" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/9c/9cf0efb53d2cd654ebb09a11510ba775" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f1/f109b229a68f19241b906bab254e0f9c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/f1/f109b229a68f19241b906bab254e0f9c.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityLockfile" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/UnityLockfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,12 +75,12 @@
         <option value="$PROJECT_DIR$/Assets/Script/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Goal.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/CameraContorol.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/VortexManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Vortex.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/wimp.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/EnemySpone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/VortexManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Vortex.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
       </list>
     </option>
   </component>
@@ -142,6 +140,7 @@
       <workItem from="1582200402901" duration="5206000" />
       <workItem from="1582268622148" duration="11255000" />
       <workItem from="1582349799583" duration="7214000" />
+      <workItem from="1582873563062" duration="3067000" />
     </task>
     <servers />
   </component>
@@ -161,13 +160,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Script/Vortex.cs</url>
-          <line>36</line>
+          <line>44</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Script/Vortex.cs" initialLine="36">
             <startOffsets>
-              <option value="961" />
+              <option value="1233" />
             </startOffsets>
             <endOffsets>
-              <option value="962" />
+              <option value="1234" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />

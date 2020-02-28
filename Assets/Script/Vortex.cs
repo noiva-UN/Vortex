@@ -11,6 +11,8 @@ public class Vortex : MonoBehaviour
 
     private Rigidbody playerRb = null, rb = null;
 
+    [SerializeField] private List<Rigidbody> pulled = new List<Rigidbody>();
+    
     private float mathTime = 0f, gravity = 1f;
 
     private Vector3 targetPos = Vector3.one, originPos = Vector3.one;
@@ -24,7 +26,13 @@ public class Vortex : MonoBehaviour
     {
         if (effectActive)
         {
-            playerRb.AddForce(GetDirection() * Time.deltaTime * (count / 2), ForceMode.Acceleration);
+            //playerRb.AddForce(GetDirection(player) * Time.deltaTime, ForceMode.Acceleration);
+
+            
+            foreach (var pull in pulled)
+            {
+                pull.AddForce(GetDirection(pull.gameObject) * gravity * Time.deltaTime, ForceMode.Acceleration);
+            }
         }
         else
         {
@@ -39,13 +47,13 @@ public class Vortex : MonoBehaviour
     }
 
     /// <summary>
-    /// プレイヤーから見た渦の方向の単位ベクトルを得る
+    /// ターゲットから見た渦の方向の単位ベクトルを得る
     /// </summary>
     /// <returns>単位ベクトル</returns>
-    private Vector3 GetDirection()
+    private Vector3 GetDirection(GameObject target)
     {
-        var vec = transform.position - player.gameObject.transform.position;
-        return vec.normalized * gravity;
+        var vec = transform.position - target.gameObject.transform.position;
+        return vec.normalized;
     }
 
     /// <summary>
@@ -66,8 +74,11 @@ public class Vortex : MonoBehaviour
     /// </summary>
     private void Initialized()
     {
+        pulled.Clear();
+        gameObject.SetActive(true);
         count = 3;
         _animator.SetInteger(CountInAnimator,count);
+
     }
 
     
@@ -79,14 +90,14 @@ public class Vortex : MonoBehaviour
     /// <param name="weight">重力</param>
     public void ShotThis(Vector3 targetPosition , float speed, float weight)
     {
-        gameObject.SetActive(true);
+        Initialized();
         targetPos = targetPosition;
         originPos = transform.position;
         gravity = weight;
         
         effectActive = false;
         rb.velocity = (targetPos - originPos).normalized * speed;
-        Initialized();
+
     }
 
     /// <summary>
@@ -107,4 +118,41 @@ public class Vortex : MonoBehaviour
         return (targetPos - originPos).magnitude <= (transform.position - originPos).magnitude + 0.1;
     }
     
+    public void AddPulledObject(Rigidbody obj)
+    {
+
+        if (pulled.IndexOf(obj) == -1)
+        {
+            pulled.Add(obj);
+        }
+    }
+    public void AddPulledObject(Rigidbody[] objs)
+    {
+        foreach (var ob in objs)
+        {
+            if (pulled.IndexOf(ob) == -1)
+            {
+                pulled.Add(ob);
+            }
+        }
+    }
+    
+    public void DisAddPulledObject(Rigidbody obj)
+    {
+        if (pulled.IndexOf(obj) != -1)
+        {
+            pulled.Remove(obj);
+        }
+    }
+    
+    public void DisAddPulledObject(Rigidbody[] objs)
+    {
+        foreach (var ob in objs)
+        {
+            if (pulled.IndexOf(ob) != -1)
+            {
+                pulled.Remove(ob);
+            }
+        }
+    }
 }

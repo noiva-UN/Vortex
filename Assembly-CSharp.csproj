@@ -53,13 +53,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Base.cs" />
      <Compile Include="Assets\Script\Bullet.cs" />
      <Compile Include="Assets\Script\Button.cs" />
      <Compile Include="Assets\Script\CameraContorol.cs" />
      <Compile Include="Assets\Script\Enemy.cs" />
      <Compile Include="Assets\Script\EnemySpone.cs" />
+     <Compile Include="Assets\Script\FlayToBase.cs" />
      <Compile Include="Assets\Script\Goal.cs" />
      <Compile Include="Assets\Script\Player.cs" />
+     <Compile Include="Assets\Script\SingletonMonoBehaviour.cs" />
      <Compile Include="Assets\Script\Vortex.cs" />
      <Compile Include="Assets\Script\VortexManager.cs" />
      <Compile Include="Assets\Script\Wall.cs" />

@@ -2,32 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3801fe68-82f7-40f5-931f-01b8568600cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/dead.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/dead.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Vortex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Vortex.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/VortexManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/VortexManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/EnemySpone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/EnemySpone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/wimp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/wimp.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/05/05d54540dbfa00940b648e73fb7585cd" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/05/05d54540dbfa00940b648e73fb7585cd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/1f/1f41168dc0ee1884f93c43a292016025" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1f/1f41168dc0ee1884f93c43a292016025" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/9c/9cf0efb53d2cd654ebb09a11510ba775" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/9c/9cf0efb53d2cd654ebb09a11510ba775" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f1/f109b229a68f19241b906bab254e0f9c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f1/f109b229a68f19241b906bab254e0f9c.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/22/226d4a107f37b034a8f35b4cb00a3fc2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/22/226d4a107f37b034a8f35b4cb00a3fc2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6c/6c8b82969eca9024d8ad9aea541168fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6c/6c8b82969eca9024d8ad9aea541168fc.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/b8/b80f095281fe33f4b9b0131219172385" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b8/b80f095281fe33f4b9b0131219172385" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d6/d6a6702f738b0d64699718bd725de933" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d6/d6a6702f738b0d64699718bd725de933" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,18 +46,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Goal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Vortex.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CameraContorol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EFA5608A-E90B-4790-8EA2-4A4AE89706D2/e0/44a0d8c8/TagField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/VortexManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/FlayToBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Wall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/EnemySpone.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/wimp.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Base.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Magnetpunk/MagnetPunkProject/Assets/WorkSpace/noiva/Scripts/Fangrin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Goal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/wimp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/SingletonMonoBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -75,12 +72,15 @@
         <option value="$PROJECT_DIR$/Assets/Script/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Goal.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/CameraContorol.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/wimp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/EnemySpone.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/VortexManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Vortex.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/wimp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/SingletonMonoBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/EnemySpone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Base.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/FlayToBase.cs" />
       </list>
     </option>
   </component>
@@ -141,6 +141,7 @@
       <workItem from="1582268622148" duration="11255000" />
       <workItem from="1582349799583" duration="7214000" />
       <workItem from="1582873563062" duration="3067000" />
+      <workItem from="1582954767293" duration="3189000" />
     </task>
     <servers />
   </component>
@@ -154,6 +155,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="0" y="0" width="945" height="826" key="dock-window-1/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1582349798177" />
+    <state x="542" y="314" width="672" height="678" key="search.everywhere.popup" timestamp="1582961600362">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="542" y="314" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1582961600362" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

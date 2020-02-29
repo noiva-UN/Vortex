@@ -18,9 +18,9 @@ public class wimp : Enemy
         
     }
 
-    public override void SetUp(EnemySpone spone)
+    public override void SetUp(EnemySpone spone,Base @base)
     {
-        base.SetUp(spone);
+        base.SetUp(spone, @base);
         _audio = GetComponent<AudioSource>();
     }
 

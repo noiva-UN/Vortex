@@ -9,11 +9,14 @@ public class Enemy : MonoBehaviour
     
     protected Rigidbody _rigidbody;
 
+    
+    protected Base target;
     protected EnemySpone _enemySpone;
-    public virtual void SetUp(EnemySpone spone)
+    public virtual void SetUp(EnemySpone spone, Base @base)
     {
         _rigidbody = GetComponent<Rigidbody>();
         _enemySpone = spone;
+        target = @base;
         gameObject.SetActive(false);
     }
     

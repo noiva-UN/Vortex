@@ -7,9 +7,11 @@ public class EnemySpone : MonoBehaviour
     
     private List<Enemy> _enemyPool = new List<Enemy>();
 
-    [SerializeField] private GameObject enemyObject;
+    [SerializeField] private GameObject wimp,flay;
     [SerializeField] private int awakeSpone = 5, sponeLimit = 10;
     [SerializeField] private float sponeCoolDown = 1;
+    
+    private Base _base;
     
     private int activeEnemy = 0;
     private float mathTime = 0f;
@@ -18,6 +20,7 @@ public class EnemySpone : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        
         Initialize();
     }
 
@@ -39,6 +42,7 @@ public class EnemySpone : MonoBehaviour
 
     private void Initialize()
     {
+        _base = Base.Instance;
         for (var i = 0; i < awakeSpone; i++)
         {
            InitializedEnemy(NewEnemy());
@@ -75,9 +79,18 @@ public class EnemySpone : MonoBehaviour
 
     private Enemy NewEnemy()
     {
-        var spone = Instantiate(enemyObject).GetComponent<Enemy>();
+        Enemy spone;
+        if (Random.Range(1, 10) >= 3)
+        {
+            spone = Instantiate(flay).GetComponent<Enemy>();
+        }
+        else
+        {
+            spone = Instantiate(wimp).GetComponent<Enemy>();
+        }
+
         spone.transform.SetParent(transform);
-        spone.SetUp(this);
+        spone.SetUp(this,_base);
         _enemyPool.Add(spone);
         return spone;
     }

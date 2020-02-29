@@ -7,13 +7,16 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Script" t="Include">
+          <e p="Base.cs" t="Include" />
           <e p="Bullet.cs" t="Include" />
           <e p="Button.cs" t="Include" />
           <e p="CameraContorol.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
           <e p="EnemySpone.cs" t="Include" />
+          <e p="FlayToBase.cs" t="Include" />
           <e p="Goal.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="SingletonMonoBehaviour.cs" t="Include" />
           <e p="Vortex.cs" t="Include" />
           <e p="VortexManager.cs" t="Include" />
           <e p="Wall.cs" t="Include" />

@@ -1673,6 +1673,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wimp
       objectReference: {fileID: 0}
+    - target: {fileID: 790843507951209920, guid: 6327159ee6090584094739aa3fe5d361,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 790843507951209932, guid: 6327159ee6090584094739aa3fe5d361,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1820,6 +1825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: flay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010631779366416686, guid: 42d9c05b26c2dff4a917e02b8f1d0942,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8010631779366416674, guid: 42d9c05b26c2dff4a917e02b8f1d0942,
         type: 3}

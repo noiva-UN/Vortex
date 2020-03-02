@@ -5,22 +5,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vortex/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Enemy.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/flay.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/flay.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/EnemySpone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/EnemySpone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/wimp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/wimp.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptMapper" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptMapper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/6c6606-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/6c6606-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/22/226d4a107f37b034a8f35b4cb00a3fc2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/22/226d4a107f37b034a8f35b4cb00a3fc2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/6c/6c8b82969eca9024d8ad9aea541168fc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/6c/6c8b82969eca9024d8ad9aea541168fc.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/b8/b80f095281fe33f4b9b0131219172385" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b8/b80f095281fe33f4b9b0131219172385" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/d6/d6a6702f738b0d64699718bd725de933" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d6/d6a6702f738b0d64699718bd725de933" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/42/42d9c05b26c2dff4a917e02b8f1d0942" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/42/42d9c05b26c2dff4a917e02b8f1d0942" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/42/42d9c05b26c2dff4a917e02b8f1d0942.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/42/42d9c05b26c2dff4a917e02b8f1d0942.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +43,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/StateCache/SceneView/6c6606-mainStage.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Vortex.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CameraContorol.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/StartScenesManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/FadeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EFA5608A-E90B-4790-8EA2-4A4AE89706D2/e0/44a0d8c8/TagField.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/VortexManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -81,6 +81,8 @@
         <option value="$PROJECT_DIR$/Assets/Script/EnemySpone.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Base.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/FlayToBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/FadeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/StartScenesManager.cs" />
       </list>
     </option>
   </component>
@@ -142,6 +144,7 @@
       <workItem from="1582349799583" duration="7214000" />
       <workItem from="1582873563062" duration="3067000" />
       <workItem from="1582954767293" duration="3189000" />
+      <workItem from="1583131599658" duration="5887000" />
     </task>
     <servers />
   </component>
